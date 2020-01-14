@@ -267,7 +267,7 @@
 				{
 					"id": "967b1e30-b3da-45ad-a706-b81e1cbabe93",
 					"name": "Upload Video",
-					"url": "http://localhost:3000/video",
+					"url": "http://localhost:3000/media/upload",
 					"description": "Here user can upload video with size less than 10mb.",
 					"data": [
 						{
@@ -346,7 +346,7 @@
 	],
 	"environments": [
 		{
-			"id": "b7aba288-7a07-4d01-adf8-2ad35bc46c8d",
+			"id": "af252a84-f753-4d0b-a5cf-c54f550904e0",
 			"name": "My Workspace - globals",
 			"values": []
 		}
