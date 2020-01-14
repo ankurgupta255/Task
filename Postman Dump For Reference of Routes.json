@@ -1,0 +1,356 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "d215edd6-a224-494a-ab27-3478c6ec094b",
+			"name": "Internship Task",
+			"description": "",
+			"auth": {
+				"type": "bearer",
+				"bearer": []
+			},
+			"events": null,
+			"variables": [],
+			"order": [
+				"29798372-56a0-478a-8acc-1cc88932dc2f",
+				"87c3bf86-fba7-4a42-9aed-e43a74b5b370",
+				"390e3436-089b-410c-9942-bb20e82f0526",
+				"163e69f5-e33f-4835-97ff-3409bf45ad21",
+				"03b690ea-0dd0-41a2-80d4-2b7d6618e3f9",
+				"967b1e30-b3da-45ad-a706-b81e1cbabe93",
+				"1f83c505-34a5-4729-b2a0-77c6f8044314",
+				"c6fecce2-8b8e-4643-a628-723504998339"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"folders": [],
+			"requests": [
+				{
+					"id": "03b690ea-0dd0-41a2-80d4-2b7d6618e3f9",
+					"name": "Change Password Request",
+					"url": "http://localhost:3000/change-password",
+					"description": "Here add the unique code and new password to change the old password.",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"rawModeData": "{\n    \"email\": \"gupta.ankur255@gmail.com\",\n    \"uniquecode\": \"2523\",\n    \"password\": \"gotohell1\"\n}",
+					"headers": "Content-Type: application/json\nAuthorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "163e69f5-e33f-4835-97ff-3409bf45ad21",
+					"name": "Reset Password Email request",
+					"url": "http://localhost:3000/reset-password",
+					"description": "To generate Email containing the unique code to change password.",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\nAuthorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "1f83c505-34a5-4729-b2a0-77c6f8044314",
+					"name": "Get User's Uploaded Videos",
+					"url": "http://localhost:3000/get-videos",
+					"description": "Get all the uploaded videos by the user",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\nAuthorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "29798372-56a0-478a-8acc-1cc88932dc2f",
+					"name": "User Signup",
+					"url": "http://localhost:3000/signup",
+					"description": "User can signup on this url. Authentication token is generated here which is to be used for all the requests to be made by the user in the future.",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"rawModeData": "{\n    \"email\": \"gupta.ankur255@gmail.com\",\n    \"name\": \"Ankur\",\n    \"password\": \"gotohell\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "390e3436-089b-410c-9942-bb20e82f0526",
+					"name": "Get User Details",
+					"url": "http://localhost:3000/user",
+					"description": "To get the details of the self user.",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\nAuthorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "87c3bf86-fba7-4a42-9aed-e43a74b5b370",
+					"name": "User Signin",
+					"url": "http://localhost:3000/signin",
+					"description": "User can signin here. No authentication is required here.",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"rawModeData": "{\n    \"email\": \"gupta.ankur255@gmail.com\",\n    \"password\": \"gotohell1\"\n}",
+					"headers": "Content-Type: application/json\nAuthorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "967b1e30-b3da-45ad-a706-b81e1cbabe93",
+					"name": "Upload Video",
+					"url": "http://localhost:3000/video",
+					"description": "Here user can upload video with size less than 10mb.",
+					"data": [
+						{
+							"key": "upload",
+							"value": null,
+							"description": "",
+							"type": "file",
+							"enabled": true
+						}
+					],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "params",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"headers": "Content-Type: application/json\nAuthorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "c6fecce2-8b8e-4643-a628-723504998339",
+					"name": "View Video Using Video URL",
+					"url": "http://localhost:3000/video/<id-of-video>",
+					"description": "Play a video uploaded by the user using the url of thre video",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": [
+						{
+							"key": "Authorization",
+							"value": "Bearer <Bearer-Token-Of-User>",
+							"description": "",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "d215edd6-a224-494a-ab27-3478c6ec094b",
+					"headers": "Authorization: Bearer <Bearer-Token-Of-User>\n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "b7aba288-7a07-4d01-adf8-2ad35bc46c8d",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
