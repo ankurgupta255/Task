@@ -29,7 +29,7 @@ const upload=multer({
     }
 })
 
-router.post('/video',auth, upload.single('upload'),async(req,res)=>{
+router.post('/media/upload',auth, upload.single('upload'),async(req,res)=>{
     const user= await User.findOne({email: req.user.email})
     if(!user){
         throw new Error()
